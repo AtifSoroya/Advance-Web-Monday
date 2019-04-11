@@ -9,29 +9,60 @@
 </head>
 
 <body>
-    <form action="afterLogin.html" method="POST">
+    <form action="login.html" method="POST">
         <h2 align="center">SignUp Here!</h2>
         <table align="center">
             <tr>
                 <td><label for="fname">First Name: </label>
-                    <input type="text" id="fname" name="firstname">
+                    <input type="text" id="fname" name="firstname" required>
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td><label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lastname" required>
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td><label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td><label for="pass">Password: </label>
+                    <input type="password" id="pass" name="Password" required>
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td><label for="cPass">Confirm Password: </label>
+                    <input type="password" id="cPass" name="confirmPassword" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile No: </label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender: </label>
+                    <label for="male">Male: </label><input type="radio" id="male" name="gender" required>
+                    <label for="female">Female: </label><input type="radio" id="female" name="gender" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="select">Select Your Country</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="china">China</option>
+                        <option value="united states">United States</option>
+                        <option value="russia">Russia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="signup">Sign Up Here:</label>
+                    <button id="signup" name="signup">Sign Up</button></td>
             </tr>
         </table>
     </form>
